@@ -1,5 +1,5 @@
 // app.js
-const express = require('express');
+const express = require("express");
 const app = express();
 const userRoute = require("./routes/auth");
 const postRoute = require("./routes/posts");
@@ -19,5 +19,5 @@ app.use("/api/post", postRoute);
 
 // Listen to the port
 app.listen(PORT, () => {
-    console.log(`Listening to port ${PORT}`);
+  console.log(`Listening to port ${PORT}`);
 });
